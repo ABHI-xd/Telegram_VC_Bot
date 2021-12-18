@@ -1,5 +1,5 @@
 HEROKU = True  # NOTE Make it false if you're not deploying on heroku.
-
+import os
 # NOTE these values are for heroku & Docker.
 if HEROKU:
     from os import environ
@@ -13,7 +13,7 @@ if HEROKU:
         "SESSION_STRING"
     ]  # Check Readme for session
     ARQ_API_KEY = environ["ARQ_API_KEY"]
-    CHAT_ID = int(environ["CHAT_ID"])
+    CHAT_ID = int(os.environ.get("CHAT_ID"))
     DEFAULT_SERVICE = environ.get("DEFAULT_SERVICE") or "youtube"
     BITRATE = int(environ["BITRATE"])
 
