@@ -14,7 +14,3 @@ if HEROKU:
     ]  # Check Readme for session
     ARQ_API_KEY = environ["ARQ_API_KEY"]
     CHAT_ID = int(environ("CHAT_ID", '')
-    
-
-
-
