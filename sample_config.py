@@ -15,7 +15,7 @@ if HEROKU:
     ARQ_API_KEY = environ["ARQ_API_KEY"]
     CHAT_ID = int(environ("CHAT_ID", '')
     
-    BITRATE = int(environ("BITRATE", '')
+    BITRATE = int(environ("BITRATE"
 
 # NOTE Fill this if you are not deploying on heroku.
 if not HEROKU:
